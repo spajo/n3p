@@ -1,0 +1,64 @@
+{
+    "bed_mesh_max": "290,315",
+    "bed_mesh_min": "22,22",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;G92 E0\n;[layer_z]\nTIMELAPSE_TAKE_FRAME\n",
+    "emit_machine_limits_to_gcode": "0",
+    "fan_speedup_time": "1",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "inherits": "Elegoo Neptune 3 Plus 0.4 nozzle",
+    "is_custom_defined": "0",
+    "layer_change_gcode": "SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}\nM117 Layer {layer_num+1}/[total_layer_count]",
+    "machine_end_gcode": "END_PRINT",
+    "machine_max_acceleration_extruding": [
+        "3000",
+        "500"
+    ],
+    "machine_max_acceleration_x": [
+        "4000",
+        "500"
+    ],
+    "machine_max_acceleration_y": [
+        "4000",
+        "500"
+    ],
+    "machine_max_speed_x": [
+        "200",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "100",
+        "500"
+    ],
+    "machine_pause_gcode": "M601",
+    "machine_start_gcode": "M117\nSET_PRINT_STATS_INFO CURRENT_LAYER=0\nSET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]\nSTART_PRINT BED_TEMP={first_layer_bed_temperature[0]} EXTRUDER_TEMP={first_layer_temperature[0]}",
+    "manual_filament_change": "1",
+    "max_layer_height": [
+        "0.52"
+    ],
+    "min_layer_height": [
+        "0.1"
+    ],
+    "name": "Klipper N3P 0.6",
+    "nozzle_diameter": [
+        "0.6"
+    ],
+    "nozzle_type": "brass",
+    "print_host": "http://192.168.1.110/",
+    "printer_settings_id": "Klipper N3P 0.6",
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "0.9"
+    ],
+    "time_cost": "1.2",
+    "use_firmware_retraction": "1",
+    "version": "1.7.0.0",
+    "wipe": [
+        "0"
+    ],
+    "z_hop": [
+        "0"
+    ]
+}
